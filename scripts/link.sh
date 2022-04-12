@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 filesToLink=(".gitconfig")
 
 # Navigate to the root of the project
