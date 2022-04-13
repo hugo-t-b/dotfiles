@@ -1,4 +1,4 @@
-filesToLink=(".gitconfig")
+filesToLink=(".bashrc" ".gitconfig")
 
 # Navigate to the root of the project
 cd $(dirname "$0")/../
