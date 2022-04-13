@@ -1,4 +1,4 @@
-filesToLink=(".bashrc" ".gitconfig")
+filesToLink=(".bashrc" ".gitconfig" ".hushlogin")
 
 # Navigate to the root of the project
 cd $(dirname "$0")/../
