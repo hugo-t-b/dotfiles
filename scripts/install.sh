@@ -1,6 +1,11 @@
 # Navigate to the root of the project
 cd $(dirname "$0")/../
 
+# Upgrade apt packages
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoremove -y
+
 # Install dependencies specified in package.list
 echo "Installing packages"
 xargs -a package.list sudo apt-get install
