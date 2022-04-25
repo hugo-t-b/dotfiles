@@ -1,3 +1,5 @@
 [user]
 	email = 101022007+hugo-t-b@users.noreply.github.com
 	name = Hugo Brosnahan
+[core]
+  editor = code --wait
