@@ -28,3 +28,7 @@ echo "Installing PNPM"
 corepack enable
 corepack prepare pnpm@6.32.6 --activate
 pnpm add -g pnpm
+
+# Install ni
+echo "Installing ni"
+pnpm add -g @antfu/ni
