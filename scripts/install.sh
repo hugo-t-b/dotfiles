@@ -32,3 +32,7 @@ pnpm add -g pnpm
 # Install ni
 echo "Installing ni"
 pnpm add -g @antfu/ni
+
+# Install Pulumi
+echo "Installing Pulumi"
+curl -fsSL https://get.pulumi.com | sh
