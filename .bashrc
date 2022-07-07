@@ -81,3 +81,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PNPM_HOME="/home/hugob/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# Pulumi
+export PATH=$PATH:$HOME/.pulumi/bin
