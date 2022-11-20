@@ -10,29 +10,17 @@ sudo apt autoremove -y
 echo "Installing packages"
 xargs -a package.list sudo apt-get install
 
-# Install NVM
-echo "Installing NVM"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-
-# Set up NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
 # Install Node
 echo "Installing Node"
-nvm install --lts
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install nodejs -y
 
 # Install PNPM
 echo "Installing PNPM"
 corepack enable
-corepack prepare pnpm@6.32.6 --activate
-pnpm add -g pnpm
+corepack prepare pnpm@latest --activate
+pnpm setup
 
 # Install ni
 echo "Installing ni"
 pnpm add -g @antfu/ni
-
-# Install Pulumi
-echo "Installing Pulumi"
-curl -fsSL https://get.pulumi.com | sh

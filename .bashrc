@@ -72,15 +72,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# NVM
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-export PNPM_HOME="/home/hugob/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-
-# Pulumi
-export PATH=$PATH:$HOME/.pulumi/bin

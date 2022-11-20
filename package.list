@@ -1,6 +1,8 @@
 curl
 epiphany-browser
+gcc
 git
+g++
 libgtk2.0-0
 libgtk-3-0
 libgbm-dev
@@ -10,6 +12,7 @@ libnss3
 libxss1
 libasound2
 libxtst6 
+make
 postgresql
 postgresql-contrib
 xauth
